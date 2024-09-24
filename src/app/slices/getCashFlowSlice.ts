@@ -14,14 +14,14 @@ const initialState: IGetCashFlowSlice = {
   error: null,
 };
 
-export const getCashFlow = createAsyncThunk<INodeDetails[] | string>(
+export const getCashFlow = createAsyncThunk<INodeDetails[]>(
   "getCashFlow",
   async () => {
     try {
       const res = await getCashFlowApi();
       return res.data;
     } catch (error) {
-      return error as string;
+      throw(error)
     }
   }
 );

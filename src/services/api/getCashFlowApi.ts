@@ -1,4 +1,4 @@
-const mockData = [
+export const mockGetCashFlowApiData = [
   {
     id: 0,
     name: "Incomes",
@@ -63,5 +63,7 @@ export interface GetCashFlowResponse {
 }
 
 export const getCashFlowApi = (): Promise<GetCashFlowResponse> => {
-  return new Promise((res) => setTimeout(() => res({ data: mockData }), 500));
+  return new Promise((res) =>
+    setTimeout(() => res({ data: mockGetCashFlowApiData }), 500)
+  );
 };

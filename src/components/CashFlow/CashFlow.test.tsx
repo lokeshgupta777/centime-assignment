@@ -63,6 +63,10 @@ jest.mock("./SankeyNodeWithTitle/SankeyNodeWithTitle", () => ({
 }));
 
 describe("CashFlow", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+  
   it("renders the component properly", async () => {
     render(
       <TestComponentWrapper>
