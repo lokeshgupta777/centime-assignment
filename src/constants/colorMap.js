@@ -1,0 +1,1 @@
+export const colorMap = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f', '#cab2d6', '#ffff99', '#1f78b4', '#33a02c', '#d799ae', '#a61d4c']
