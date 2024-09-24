@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/centime-assignment/static/css/main.2c11e34c.css",
+    "main.js": "/centime-assignment/static/js/main.a524592f.js",
+    "index.html": "/centime-assignment/index.html",
+    "main.2c11e34c.css.map": "/centime-assignment/static/css/main.2c11e34c.css.map",
+    "main.a524592f.js.map": "/centime-assignment/static/js/main.a524592f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c11e34c.css",
+    "static/js/main.a524592f.js"
+  ]
+}
