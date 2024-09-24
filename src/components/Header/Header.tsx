@@ -3,6 +3,7 @@ import MenuItem from "@mui/material/MenuItem";
 import i18n from "../../config/i18next";
 import { useState } from "react";
 import styles from "./Header.module.css";
+import Logo from "../../assets/svg/logo.svg"
 
 const Header = () => {
   const [currLng, setCurrLng] = useState(i18n.language);
@@ -19,7 +20,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <img src="/assets/svg/logo.svg" alt="logo" data-testid="header-logo" />
+      <img src={Logo} alt="logo" data-testid="header-logo" />
       <Select
         value={currLng}
         onChange={languageChangeHandler}
