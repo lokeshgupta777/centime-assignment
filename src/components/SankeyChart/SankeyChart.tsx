@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import { Sankey } from "recharts";
 import { Tooltip } from "recharts";
+import styles from "./Sankey.module.css"
 
 export interface ISankeyNode {
   name: string;
@@ -56,6 +57,7 @@ const SankeyChart = (props: ISankeyChart) => {
       onMouseLeave={onMouseLeave}
       nodePadding={80}
       iterations={1000}
+      className={styles.sankey}
     >
       <Tooltip />
     </Sankey>

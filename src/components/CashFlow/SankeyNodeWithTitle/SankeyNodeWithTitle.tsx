@@ -1,7 +1,8 @@
 import { Rectangle, Layer } from "recharts";
 
 const SankeyNodeWithTitle = (props: any) => {
-  const { x, y, width, height, index, payload } = props;
+  const { x, y, width, height, index, payload,containerWidth } = props;
+  const isOut = x + width + 6 > containerWidth;
   if (!(payload?.sourceNodes?.length || payload?.targetNodes?.length))
     return null;
   return (
@@ -16,7 +17,7 @@ const SankeyNodeWithTitle = (props: any) => {
       />
       <text
         textAnchor="start"
-        x={x + width + 6}
+        x={isOut ? x - 6 : x + width + 6}
         y={y + height / 2}
         fontSize="14"
         stroke="#333"
@@ -25,7 +26,7 @@ const SankeyNodeWithTitle = (props: any) => {
       </text>
       <text
         textAnchor="start"
-        x={x + width + 6}
+        x={isOut ? x - 6 : x + width + 6}
         y={y + height / 2 + 13}
         fontSize="12"
         stroke="#333"

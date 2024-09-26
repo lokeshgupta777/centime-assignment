@@ -14,6 +14,7 @@ export interface IDeleteNodeModal {
   setCashFlowSankeyData: React.Dispatch<ISankeyData | null>;
 }
 
+//TODO : Very thin links on adding any link after deleting the first link(Income - salary)
 const DeleteNode = ({
   selectedNodeInfo,
   setSelectedNodeInfo,
